@@ -125,7 +125,57 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+        }    /* Post Navigation Styles */
+        .post-navigation {
+            display: flex;
+            flex-direction: column; /* 세로 정렬 */
+            gap: 10px; /* 링크 사이 간격 */
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
         }
+
+        .post-link {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #f0f0f0;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.95em;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .post-link:hover {
+            background-color: #e0e0e0;
+            color: #007bff;
+        }
+
+        .post-link .arrow {
+            font-size: 1.2em;
+            color: #007bff;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .post-link.prev {
+            justify-content: flex-start;
+        }
+
+        .post-link.next {
+            justify-content: flex-end;
+        }
+
+        .post-link.prev .arrow {
+            transform: none; /* ▲ 기본 방향 */
+            margin-left: -5px; /* 화살표가 더 붙도록 조정 */
+        }
+
+        .post-link.next .arrow {
+            transform: none; /* ▼ 기본 방향 */
+            margin-right: -5px; /* 화살표가 더 붙도록 조정 */
+        } </style>
     </style>
 </head>
 <body>
@@ -158,7 +208,10 @@
         <p>지난해 인공신장기용 혈액 여과기의 국내 식약처 인증을 획득한 시노펙스는 현재 국내 혈액투석 전문 병원을 대상으로 제품 공급을 시작했으며, 서울대학교 병원 등 5개 상급 병원 임상 결과 논문 발표, CE MDR 및 US FDA 인증 획득을 추진하면서 우수한 기술력과 품질의 안정성을 확보하여 해외 시장 진출을 준비하고 있습니다.</p>
         <p>시노펙스는 이번에 임상을 진행하는 인공신장기용 혈액여과(투석)기 외에도 CRRT 기기, 인공신장기(HD), 이동형 정수기, 혈액회로, 혈액투석액 등 다양한 제품의 출시를 통해 혈액투석 분야 글로벌 기업으로의 도약을 준비하고 있습니다.</p>
     </div>
-</div>
+ <div class="post-navigation">
+        <a href="https://goodlight1234.github.io/news06/" class="post-link prev"><span class="arrow">▲</span> 시노펙스, 국산화 혈액여과기 첫 수출 MOU 체결!</a>
+        <a href="https://goodlight1234.github.io/news08/" class="post-link next">남성 직원 출산 휴가 사용률 100%… 제조업체도 육아 문제없죠<span class="arrow">▼</span></a>
+    </div>
 
 </body>
 </html>
